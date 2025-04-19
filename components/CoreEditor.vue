@@ -234,7 +234,7 @@ export default defineComponent({
     }
 
     .ink-mde-task-marker {
-      @apply checkbox outline-1;
+      @apply appearance-none outline-none rounded-sm cursor-pointer outline-layer-text-muted checked:bg-primary checked:disabled:bg-layer-text-muted sq-2 m-1 outline-1;
 
       translate: 0 -2px;
     }

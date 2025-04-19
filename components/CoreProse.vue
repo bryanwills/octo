@@ -17,7 +17,7 @@ const { layer } = useLayers()
 }
 
 :deep(li input[type=checkbox]) {
-  @apply checkbox;
+  @apply appearance-none outline-none rounded-sm cursor-pointer outline-2 outline-layer-text-muted checked:bg-primary checked:disabled:bg-layer-text-muted sq-2 m-1;
 
   margin-bottom: 0.05rem;
 }
