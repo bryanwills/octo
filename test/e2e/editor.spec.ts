@@ -21,7 +21,7 @@ test.describe('editor', () => {
     await page.goto('/docs/new')
     await page.waitForSelector('[data-is-mounted="true"]')
 
-    await page.keyboard.type('a')
+    await page.keyboard.type('abc')
     expect(page.url()).not.toMatch(/\/docs\/new$/)
     expect(page.url()).toMatch(/\/docs\/[\w-]+$/)
   })
