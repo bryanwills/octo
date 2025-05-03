@@ -328,14 +328,14 @@ export default defineComponent({
                   <CoreListboxOptions class="z-20 bg-layer">
                     <div class="flex gap-0.5 items-center p-2 text-layer-muted mb-2">
                       <Icon name="ContextSize" />
-                      <small>Total Context Size (in Tokens)</small>
+                      <small>Context Window (in Tokens)</small>
                     </div>
                     <div class="grid auto-rows-auto auto-cols-auto">
                       <CoreListboxOption
                         v-for="model in languageModels"
                         :id="model.id"
                         :key="model.id"
-                        class="grid grid-cols-subgrid col-span-2 gap-4"
+                        class="grid grid-cols-subgrid col-span-3 gap-4"
                         :disabled="model.disabled"
                         :label="model.label"
                         :layer="1"
@@ -351,6 +351,14 @@ export default defineComponent({
                           <small class="text-xs text-layer-muted flex items-center gap-0.5">
                             <Icon name="ContextSize" />
                             {{ model.contextWindow }}
+                          </small>
+                        </span>
+
+                        <span v-if="model.url" class="flex items-center justify-start gap-4 col-start-3">
+                          <small class="text-xs text-layer-muted flex items-center gap-0.5">
+                            <CoreLink title="Model Page" :to="model.url" @click.stop>
+                              <Icon name="Info" />
+                            </CoreLink>
                           </small>
                         </span>
                       </CoreListboxOption>

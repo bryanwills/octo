@@ -65,6 +65,7 @@ const icons = {
   Graph: Tabler.IconAffiliate,
   ImagePlus: Tabler.IconPhotoPlus,
   Inbox: Tabler.IconInbox,
+  Info: Tabler.IconInfoCircle,
   Instruction: Tabler.IconListDetails,
   LockClosed: Tabler.IconLock,
   LockOpen: Tabler.IconLockOpen,

@@ -14,33 +14,75 @@ type ModelOption = {
   contextWindow: string,
   comingSoon?: boolean,
   disabled?: boolean,
+  url?: string,
 }
 
 const defaultLanguageModels: ModelOption[] = [
   {
-    id: 'gpt-4o',
-    label: 'GPT-4o',
-    contextWindow: '128k',
+    id: 'gpt-4.1',
+    label: 'GPT-4.1',
+    contextWindow: '1m',
+    url: 'https://platform.openai.com/docs/models/gpt-4.1',
   },
   {
-    id: 'gpt-4o-mini',
-    label: 'GPT-4o Mini',
-    contextWindow: '128k',
+    id: 'gpt-4.1-mini',
+    label: 'GPT-4.1 Mini',
+    contextWindow: '1m',
+    url: 'https://platform.openai.com/docs/models/gpt-4.1-mini',
+  },
+  {
+    id: 'gpt-4.1-nano',
+    label: 'GPT-4.1 Nano',
+    contextWindow: '1m',
+    url: 'https://platform.openai.com/docs/models/gpt-4.1-nano',
+  },
+  {
+    id: 'o4-mini',
+    label: 'o4 Mini',
+    contextWindow: '200k',
+    url: 'https://platform.openai.com/docs/models/o4-mini',
+  },
+  {
+    id: 'o3',
+    label: 'o3',
+    contextWindow: '200k',
+    url: 'https://platform.openai.com/docs/models/o3',
+  },
+  {
+    id: 'o3-mini',
+    label: 'o3 Mini',
+    contextWindow: '200k',
+    url: 'https://platform.openai.com/docs/models/o3-mini',
   },
   {
     id: 'o1',
     label: 'o1',
     contextWindow: '200k',
+    url: 'https://platform.openai.com/docs/models/o1',
   },
   {
     id: 'o1-mini',
     label: 'o1 Mini',
     contextWindow: '128k',
+    url: 'https://platform.openai.com/docs/models/o1-mini',
   },
   {
     id: 'o1-preview',
     label: 'o1 Preview',
     contextWindow: '128k',
+    url: 'https://platform.openai.com/docs/models/o1-preview',
+  },
+  {
+    id: 'gpt-4o',
+    label: 'GPT-4o',
+    contextWindow: '128k',
+    url: 'https://platform.openai.com/docs/models/gpt-4o',
+  },
+  {
+    id: 'gpt-4o-mini',
+    label: 'GPT-4o Mini',
+    contextWindow: '128k',
+    url: 'https://platform.openai.com/docs/models/gpt-4o-mini',
   },
   {
     id: 'gpt-4-turbo',
