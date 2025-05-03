@@ -126,6 +126,11 @@ export const loadKeybindings = async (store: Store<any>) => {
 
       goTo('/docs')
     })
+    bindGlobal('mod+shift+/', () => {
+      store.dispatch(DISABLE_LISTENERS)
+
+      goTo('/assistant')
+    })
 
     // disable listeners on any click
     window.addEventListener('click', () => store.dispatch(DISABLE_LISTENERS))
